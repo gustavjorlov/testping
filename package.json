@@ -1,14 +1,22 @@
 {
   "name": "testping",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./bin/testping"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "homepage": "https://github.com/gustavjorlov/testping",
+  "preferGlobal": true,
+  "bin": {
+    "testping": "bin/testping"
+  },
+  "engines": {
+    "node": ">=8"
+  },
   "dependencies": {
     "minimist": "^1.2.5",
     "node-notifier": "^6.0.0"
